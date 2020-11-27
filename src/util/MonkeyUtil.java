@@ -14,11 +14,11 @@ public class MonkeyUtil {
 	public static final String SH_PATH = "c:/cmd.sh";
 	// 停止monkey的临时文件
 	public static final String STOP_BAT_PATH = "c:/stop_exec.bat";
-
 	/**
 	 * 运行monkey指令
 	 */
 	public static String runMonkey(Monkey monkey) {
+
 		String monkeyCmd = "monkey -p "
 				+ monkey.getPackageName()
 				+ " --throttle "
